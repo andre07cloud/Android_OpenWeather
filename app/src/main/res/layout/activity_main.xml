@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/mnfirst">
+
+    <RelativeLayout
+        android:id="@+id/entete2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="5sp"
+        android:background="@color/coltete">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/accueil"
+            android:layout_marginLeft="10sp"
+            android:layout_alignParentLeft="true"
+            android:onClick="exitApp"
+            />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/icons8coeurs"
+            android:onClick="listeFavorite1"
+            android:layout_margin="10sp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10sp" />
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/entete2">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="City Current Weather"
+            android:textAlignment="center"
+            android:layout_margin="20sp"
+            android:textSize="24sp"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+        <ImageView
+            android:layout_width="300sp"
+            android:layout_height="300sp"
+            android:src="@drawable/currentweather2"
+            android:layout_gravity="center_horizontal"
+            />
+        <EditText
+            android:id="@+id/editSearch"
+            android:layout_width="300sp"
+            android:layout_height="wrap_content"
+            android:hint="Citi's Name"
+            android:textColorHint="@color/white"
+            android:textColor="@color/white"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="40sp"/>
+        <TextView
+            android:id="@+id/txtvide"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_marginBottom="5sp"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Get Weather"
+            android:background="#3498DB"
+            android:textColor="@color/white"
+            android:layout_gravity="center_horizontal"
+            android:padding="15sp"
+            android:onClick="goMain"/>
+    </LinearLayout>
+
+</RelativeLayout>
